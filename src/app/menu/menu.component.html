@@ -1,0 +1,24 @@
+<a id="menu-toggle" (click)="menuToggle()" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+<nav id="sidebar-wrapper" [ngClass]="{'active': active === true}">
+  <ul class="sidebar-nav">
+    <a id="menu-close" (click)="menuToggle()" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+    <li class="sidebar-brand">
+      <a href="#top" (click)="menuToggle()">Ahrendee</a>
+    </li>
+    <li>
+      <a href="#top" (click)="menuToggle()">Home</a>
+    </li>
+    <li>
+      <a href="#about" (click)="menuToggle()">About</a>
+    </li>
+    <li>
+      <a href="#cv" (click)="menuToggle()">CV</a>
+    </li>
+    <li>
+      <a href="#portfolio" (click)="menuToggle()">Portfolio</a>
+    </li>
+    <li>
+      <a href="#contact" (click)="menuToggle()">Contact</a>
+    </li>
+  </ul>
+</nav>

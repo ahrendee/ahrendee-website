@@ -1,0 +1,11 @@
+.about {
+  padding: 50px 0;
+
+  .text {
+    p {
+      @media (max-width: 540px) {
+        font-size: 14px;
+      }
+    }
+  }
+}
