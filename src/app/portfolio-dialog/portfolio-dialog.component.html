@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12"><h3>{{ data.company.title }}</h3></div>
+  </div>
+  <div class="row">
+    <div class="col-12" [innerHTML]="data.company.text"></div>
+  </div>
+  <div class="row">
+    <div class="col-12"><img src="assets/img/companies/{{ data.company.site }}"></div>
+  </div>
+  <div class="row" *ngIf="data.company.url">
+    <div class="col-12"><a mat-button href="{{ data.company.url }}" target="_blank">visit</a></div>
+  </div>
+</div>
+

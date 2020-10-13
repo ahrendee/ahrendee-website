@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AboutComponent } from './about/about.component';
 import { AngularMaterialModule } from './angular-material.module';
 
@@ -10,6 +11,7 @@ import { CvComponent } from './cv/cv.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { MenuComponent } from './menu/menu.component';
+import { PortfolioDialogComponent } from './portfolio-dialog/portfolio-dialog.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { SeparatorComponent } from './separator/separator.component';
 
@@ -20,6 +22,7 @@ import { SeparatorComponent } from './separator/separator.component';
     HeaderComponent,
     AboutComponent,
     PortfolioComponent,
+    PortfolioDialogComponent,
     ContactComponent,
     FooterComponent,
     CvComponent,
@@ -27,6 +30,7 @@ import { SeparatorComponent } from './separator/separator.component';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     AngularMaterialModule
   ],

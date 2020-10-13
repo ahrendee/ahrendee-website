@@ -13,10 +13,11 @@
                  data-aos-delay="200"
                  data-aos-duration="1000"
                  data-aos-easing="ease-in-out" class="portfolio-item">
-              <a *ngIf="company.url" href="{{ company.url }}" target="_blank">
-                <img class="img-portfolio" src="assets/img/logos/{{ company.image }}"/>
-              </a>
-              <img *ngIf="!company.url" alt="No link available" class="img-portfolio" src="assets/img/logos/{{ company.image }}"/>
+<!--              <a *ngIf="company.url" href="{{ company.url }}" target="_blank">-->
+<!--                <img class="img-portfolio" src="assets/img/logos/{{ company.image }}"/>-->
+<!--              </a>-->
+<!--              <img *ngIf="!company.url" alt="No link available" class="img-portfolio" src="assets/img/logos/{{ company.image }}"/>-->
+              <img class="img-portfolio" (click)="openCompany(company)" src="assets/img/logos/{{ company.image }}"/>
             </div>
           </div>
 
