@@ -29,8 +29,8 @@ export class PortfolioComponent implements OnInit {
         image: 'va.png'
       },
       {
-        url: 'https://www.prospery.de/',
-        image: 'prospery.png'
+        url: 'https://www.rabobank.nl/particulieren/',
+        image: 'rabobank.jpeg'
       },
       {
         url: 'https://www.kadaster.nl/',
@@ -69,8 +69,8 @@ export class PortfolioComponent implements OnInit {
         image: 'tripolis-logo_web.png'
       },
       {
-        url: 'https://www.rabobank.nl/particulieren/',
-        image: 'rabobank.jpeg'
+        url: '',
+        image: 'prospery.png'
       }
     ];
 
