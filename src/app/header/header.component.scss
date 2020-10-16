@@ -13,9 +13,10 @@
   .logo {
     width: 540px;
 
-    @media (max-width: 540px) {
-      width: 300px;
+    @media (max-width: 670px) {
+      max-width: 250px;
     }
+
   }
 
   .container {
