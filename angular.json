@@ -73,7 +73,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ahrendee:build"
+            "browserTarget": "ahrendee:build",
+            "proxyConfig": "./proxy.conf.json"
           },
           "configurations": {
             "production": {
@@ -130,6 +131,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "ahrendee"
 }
