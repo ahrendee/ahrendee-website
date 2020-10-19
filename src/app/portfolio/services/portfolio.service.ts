@@ -27,6 +27,17 @@ export class PortfolioService {
     return this.dataSubject.asObservable();
   }
 
+  addOne() {
+    this.dataStore.companies.push({
+      title: 'Joepie',
+      text: 'This is awesome',
+      url: 'http://www.google.nl',
+      image: 'dummy.jpg',
+      site: 'hamana'
+    });
+    this.dataSubject.next(Object.assign({}, this.dataStore).companies);
+  }
+
   load() {
     this.http.get(`${environment.apiUrl}/portfolio`).subscribe((data: Company[]) => {
         this.dataStore.companies = data;

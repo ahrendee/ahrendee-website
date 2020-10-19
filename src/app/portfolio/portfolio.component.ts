@@ -18,6 +18,7 @@ export class PortfolioComponent implements OnInit {
   }
 
   ngOnInit() {
+    // this.companies = this.portfolioService.companies;
     this.companies = this.portfolioService.companies;
 
     this.portfolioService.load();
@@ -28,5 +29,9 @@ export class PortfolioComponent implements OnInit {
       width: '650px',
       data: {company}
     });
+  }
+
+  addOne() {
+    this.portfolioService.addOne();
   }
 }
