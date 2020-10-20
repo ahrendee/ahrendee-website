@@ -1,12 +1,14 @@
 img {
   padding-top: 20px;
 
-  max-width: 600px;
-
-  @media (max-width: 375px) {
-    max-width: 250px;
+  max-width: 550px;
+  @media (max-width: 670px) {
+    max-width: 333px;
   }
-  @media (max-width: 667px) {
-    max-width: 500px;
+  @media (max-width: 400px) {
+    max-width: 235px;
+  }
+  @media (max-width: 320px) {
+    max-width: 190px;
   }
 }
