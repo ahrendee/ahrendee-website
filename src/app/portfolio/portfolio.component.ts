@@ -26,7 +26,6 @@ export class PortfolioComponent implements OnInit {
 
   openCompany(company: any) {
     this.dialog.open(PortfolioDialogComponent, {
-      width: '650px',
       data: {company}
     });
   }
