@@ -11,6 +11,7 @@ import { ContactComponent } from './contact/contact.component';
 import { CvComponent } from './cv/cv.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
+import { MediaComponent } from './media/media.component';
 import { MenuComponent } from './menu/menu.component';
 import { PortfolioDialogComponent } from './portfolio-dialog/portfolio-dialog.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
@@ -27,6 +28,7 @@ import { SeparatorComponent } from './separator/separator.component';
     ContactComponent,
     FooterComponent,
     CvComponent,
+    MediaComponent,
     SeparatorComponent
   ],
   imports: [
