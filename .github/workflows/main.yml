@@ -1,6 +1,9 @@
 name: Build and Deploy
 on: [ push ]
 jobs:
+  env:
+    NODE_OPTIONS:
+      --openssl-legacy-provider
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
@@ -16,15 +19,9 @@ jobs:
         run: |
           npm ci
           npm run build
-        env:
-          NODE_OPTIONS:
-            --openssl-legacy-provider
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
-        env:
-          NODE_OPTIONS:
-            --openssl-legacy-provider
         with:
           folder: dist/ahrendee
           branch: gh-pages
